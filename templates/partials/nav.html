@@ -3,6 +3,9 @@
 
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
+{%- if config.extra.nav.auto_hide %}
+	<div id="handle"></div>
+{%- endif %}
 <header id="site-nav">
 	<nav>
 		<a href="#main-content" tabindex="0">
@@ -18,6 +21,7 @@
 					{{- config.title -}}
 				</a>
 			</li>
+			<li class="divider"></li>
 			{%- for link in config.extra.nav.links | default(value=[]) %}
 				<li>
 					{%- if link.url is matching('^https?://') -%}
@@ -34,6 +38,32 @@
 					{%- endif -%}
 				</li>
 			{%- endfor -%}
+			{%- if config.extra.nav.show_theme_switcher %}
+				<li id="theme-switcher">
+					<details class="closable">
+						<summary class="circle" title="{{ macros_translate::translate(key='theme', default='Theme', language_strings=language_strings) }}">
+							<i class="icon"></i>
+						</summary>
+						<ul>
+							<li>
+								<button class="circle" id="theme-light" title="{{ macros_translate::translate(key='theme_light', default='Switch to Light Theme', language_strings=language_strings) }}">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button class="circle" id="theme-dark" title="{{ macros_translate::translate(key='theme_dark', default='Switch to Dark Theme', language_strings=language_strings) }}">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button class="circle" id="theme-system" title="{{ macros_translate::translate(key='theme_system', default='Use System Theme', language_strings=language_strings) }}">
+									<i class="icon"></i>
+								</button>
+							</li>
+						</ul>
+					</details>
+				</li>
+			{%- endif %}
 		</ul>
 	</nav>
 </header>
