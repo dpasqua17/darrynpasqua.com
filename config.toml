@@ -1,0 +1,33 @@
+base_url = "https://darrynpasqua.com"
+title = "Darryn Pasqua"
+description = "Product Manager & Engineer at the manufacturing and AI intersection."
+default_language = "en"
+theme = "duckquill"
+compile_sass = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+
+[extra]
+# Duckquill settings
+duckquill_theme = "dark"
+duckquill_font_size = "medium"
+duckquill_header_blur = true
+
+author = "Darryn Pasqua"
+author_email = "darryn@darrynpasqua.com"
+
+# Social links (shown in footer/sidebar)
+links = [
+  { name = "GitHub", url = "https://github.com/darrynpasqua" },
+  { name = "LinkedIn", url = "https://linkedin.com/in/darrynpasqua" },
+]
+
+# Nav menu
+menu = [
+  { name = "About", url = "/about", weight = 1 },
+  { name = "Blog", url = "/blog", weight = 2 },
+]
