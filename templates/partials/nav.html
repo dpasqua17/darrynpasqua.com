@@ -24,7 +24,7 @@
 			<li class="divider"></li>
 			{%- for link in config.extra.nav.links | default(value=[]) %}
 				<li>
-					{%- if link.url is matching('^https?://') -%}
+					{%- if link.url is matching('^[A-Za-z][A-Za-z0-9+.-]*:') -%}
 						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external">
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>

@@ -1,3 +1,36 @@
+.home-quote {
+  margin: 0 auto 0.9rem;
+  text-align: center;
+}
+
+.home-quote__text,
+.home-quote__byline {
+  margin: 0;
+}
+
+.home-quote__text {
+  font-size: clamp(2.2rem, 5.5vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
+}
+
+.home-quote__byline {
+  margin-top: 0.65rem;
+  color: var(--fg-muted-4);
+  font-size: var(--font-size-large);
+  font-style: italic;
+}
+
+main {
+  margin-top: 2.25rem;
+}
+
+.home-quote + .crt {
+  margin-top: 0;
+}
+
 .travel-slideshow {
   margin: 2rem 0 2.5rem;
 }
@@ -16,7 +49,7 @@
   inset: 0;
   margin: 0;
   opacity: 0;
-  animation: travel-fade 18s infinite;
+  animation: travel-fade 30s infinite;
 }
 
 .travel-slide--2 {
@@ -25,6 +58,14 @@
 
 .travel-slide--3 {
   animation-delay: 12s;
+}
+
+.travel-slide--4 {
+  animation-delay: 18s;
+}
+
+.travel-slide--5 {
+  animation-delay: 24s;
 }
 
 .travel-slide img {
@@ -56,17 +97,36 @@
 
 @keyframes travel-fade {
   0%,
-  28% {
+  16% {
     opacity: 0;
   }
 
-  6%,
-  22% {
+  3%,
+  13% {
     opacity: 1;
   }
 
-  33%,
+  20%,
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    margin-top: 1.75rem;
+  }
+
+  .home-quote {
+    margin-bottom: 0.75rem;
+  }
+
+  .home-quote__text {
+    font-size: clamp(1.9rem, 9vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .home-quote__byline {
+    font-size: var(--font-size-medium);
   }
 }
