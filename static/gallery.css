@@ -1,0 +1,72 @@
+.travel-slideshow {
+  margin: 2rem 0 2.5rem;
+}
+
+.travel-slideshow__frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--rounded-corner);
+  box-shadow: var(--edge-highlight), var(--shadow-raised);
+  aspect-ratio: 16 / 10;
+  background: var(--fg-muted-1);
+}
+
+.travel-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  animation: travel-fade 18s infinite;
+}
+
+.travel-slide--2 {
+  animation-delay: 6s;
+}
+
+.travel-slide--3 {
+  animation-delay: 12s;
+}
+
+.travel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.95) contrast(1.02);
+}
+
+.travel-slide figcaption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  margin: 0;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.45);
+  color: rgb(255 255 255 / 0.92);
+  font-size: var(--font-size-small);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(0.5rem);
+}
+
+.travel-slideshow__frame:hover .travel-slide {
+  animation-play-state: paused;
+}
+
+@keyframes travel-fade {
+  0%,
+  28% {
+    opacity: 0;
+  }
+
+  6%,
+  22% {
+    opacity: 1;
+  }
+
+  33%,
+  100% {
+    opacity: 0;
+  }
+}

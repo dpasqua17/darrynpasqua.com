@@ -21,6 +21,8 @@ Weird problems with odd constraints aren't frustrating — they're an exciting s
 
 Working on something interesting or have a frustrating problem? Send me your ideas.
 
+{% travel_slideshow() %}
+
 ---
 
 **Contact**

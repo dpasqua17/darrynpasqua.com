@@ -16,6 +16,7 @@ default_theme = "dark"
 accent_color = "#ff7800"
 accent_color_dark = "#ffa348"
 bundled_fonts = true
+styles = ["gallery.css"]
 show_copy_button = true
 show_reading_time = true
 show_share_button = false
@@ -33,7 +34,7 @@ links = [
 
 [extra.footer]
 show_copyright = true
-show_powered_by = false
+show_powered_by = true
 show_source = false
 links = [
   { url = "https://github.com/dpasqua17", name = "GitHub" },
