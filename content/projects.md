@@ -3,7 +3,7 @@ title = "Projects"
 path = "projects"
 +++
 
-Projects I’ve built, shipped, or learned from hard enough to write down.
+Projects I have learned from while building.
 
 <section class="project-list">
   <article class="project-card">
