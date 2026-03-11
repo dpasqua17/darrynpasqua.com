@@ -1,0 +1,66 @@
+<section class="project-list">
+  <article class="project-card">
+    <a class="project-card__media" href="https://github.com/dpasqua17/pitch_classifier">
+      <img src="https://raw.githubusercontent.com/dpasqua17/pitch_classifier/master/assets/portfolio-preview.png" alt="Pitch Classifier preview image.">
+    </a>
+
+    <div class="project-card__body">
+      <div class="project-card__header">
+        <p class="project-card__eyebrow">Sports analytics · machine learning</p>
+        <div class="project-card__title-row">
+          <h2>Pitch Classifier</h2>
+          <span class="project-status">Completed</span>
+        </div>
+        <p class="project-card__summary">Neural network workflow for classifying MLB pitch types from 2024 Statcast data, with separate models for left- and right-handed pitchers.</p>
+      </div>
+
+      <div class="project-stats">
+        <div class="project-stat">
+          <span class="project-stat__label">Context</span>
+          <span class="project-stat__value">INSY 7130 · Auburn · 2024</span>
+        </div>
+        <div class="project-stat">
+          <span class="project-stat__label">Best validation</span>
+          <span class="project-stat__value">94.67% LHP · 92.78% RHP</span>
+        </div>
+        <div class="project-stat">
+          <span class="project-stat__label">Feature set</span>
+          <span class="project-stat__value">18 release, movement, trajectory inputs</span>
+        </div>
+      </div>
+
+      <p>A baseball analytics project that downloads Statcast pitch data, tunes a feed-forward neural network, and trains separate classifiers for left- and right-handed pitchers using release, movement, and trajectory features.</p>
+
+      <ul class="project-meta">
+        <li>Python</li>
+        <li>TensorFlow</li>
+        <li>Keras</li>
+        <li>KerasTuner</li>
+        <li>scikit-learn</li>
+        <li>pandas</li>
+        <li>pybaseball</li>
+        <li>matplotlib</li>
+      </ul>
+
+      <details class="project-details">
+        <summary>More detail</summary>
+        <ul>
+          <li>Downloads 2024 MLB Statcast pitch-level data in 30-day chunks.</li>
+          <li>Tunes the model with Hyperband before final training.</li>
+          <li>Trains separate classifiers for left-handed and right-handed pitchers.</li>
+          <li>Includes plots, saved histories, model artifacts, and the full report.</li>
+        </ul>
+        <div class="project-gallery">
+          <img src="https://raw.githubusercontent.com/dpasqua17/pitch_classifier/master/Plots/Training_Progress.png" alt="Training progress plot for Pitch Classifier.">
+          <img src="https://raw.githubusercontent.com/dpasqua17/pitch_classifier/master/Plots/model15L_accuracy.png" alt="Left-handed pitcher model accuracy plot.">
+          <img src="https://raw.githubusercontent.com/dpasqua17/pitch_classifier/master/Plots/model15R_accuracy.png" alt="Right-handed pitcher model accuracy plot.">
+        </div>
+      </details>
+
+      <p class="project-links">
+        <a href="https://github.com/dpasqua17/pitch_classifier">Repository</a>
+        <a href="https://github.com/dpasqua17/pitch_classifier/blob/master/Project_Report_Pasqua.pdf">Project report</a>
+      </p>
+    </div>
+  </article>
+</section>
