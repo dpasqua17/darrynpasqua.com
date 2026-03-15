@@ -1,0 +1,55 @@
+<section class="project-list">
+  <article class="project-card">
+    <div class="project-card__body">
+      <div class="project-card__header">
+        <p class="project-card__eyebrow">Fitness software · desktop app</p>
+        <div class="project-card__title-row">
+          <h2>Bike Tracker</h2>
+          <span class="project-status">Ongoing</span>
+        </div>
+        <p class="project-card__summary">Real-time indoor cycling analytics desktop app.</p>
+      </div>
+
+      <div class="project-hero project-hero--bike">
+        <div class="app-frame">
+          <div class="app-frame__bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="{{ get_url(path='projects/bike-tracker-dashboard.png') }}" alt="Bike Tracker dashboard showing live cycling metrics, VO2 estimate, and trend charts.">
+        </div>
+      </div>
+
+      <div class="project-stats">
+        <div class="project-stat">
+          <span class="project-stat__label">Role</span>
+          <span class="project-stat__value">Python desktop app for live FTMS bike telemetry</span>
+        </div>
+        <div class="project-stat">
+          <span class="project-stat__label">Core loop</span>
+          <span class="project-stat__value">Bluetooth metrics in, ride analytics and session history out</span>
+        </div>
+        <div class="project-stat">
+          <span class="project-stat__label">Storage</span>
+          <span class="project-stat__value">SQLite-backed workout records for later review</span>
+        </div>
+      </div>
+
+      <p>A Python app that connects to a Bluetooth FTMS exercise bike and turns live ride data into a usable training dashboard. It shows cadence, power, heart rate, speed, resistance, VO2 estimate, and training stress in real time, while recording sessions to SQLite for later review.</p>
+
+      <ul class="project-meta">
+        <li>Python</li>
+        <li>PyQt6</li>
+        <li>BLE</li>
+        <li>SQLite</li>
+        <li>pyqtgraph</li>
+      </ul>
+
+      <p class="project-links">
+        <a href="https://github.com/dpasqua17/bike_tracker">View Project</a>
+        <a href="https://github.com/dpasqua17/bike_tracker">See on GitHub</a>
+      </p>
+    </div>
+  </article>
+</section>
