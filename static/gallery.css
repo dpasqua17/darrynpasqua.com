@@ -30,6 +30,18 @@ main {
   margin-top: 1.35rem;
 }
 
+.project-page {
+  margin-top: 0.35rem;
+}
+
+.project-page > h1 {
+  display: none;
+}
+
+.project-page > .project-list:first-of-type {
+  margin-top: 0;
+}
+
 .home-quote + .crt {
   margin-top: 0;
 }
@@ -118,6 +130,10 @@ main {
 @media (max-width: 720px) {
   main {
     margin-top: 1.15rem;
+  }
+
+  .project-page {
+    margin-top: 0.2rem;
   }
 
   .home-quote {

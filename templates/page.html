@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set is_projects_page = page.extra.compact_title | default(value=false) %}
+<div{% if is_projects_page %} class="project-page"{% endif %}>
+<h1>{{ page.title }}</h1>
+{%- include "partials/statements.html" -%}
+{%- if page.extra.toc and not page.extra.toc_sidebar -%}
+{%- include "partials/toc.html" -%}
+{%- endif -%}
+{{ page.content | safe }}
+</div>
+{% endblock content %}

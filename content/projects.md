@@ -1,6 +1,8 @@
 +++
 title = "Projects"
 path = "projects"
+[extra]
+compact_title = true
 +++
 
 {{ project_pitch_classifier() }}
