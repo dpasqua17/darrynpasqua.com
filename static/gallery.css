@@ -182,6 +182,12 @@ main {
   font-size: var(--font-size-large);
 }
 
+.project-vibe-note {
+  margin-top: -0.1rem;
+  color: var(--fg-muted-4);
+  font-size: var(--font-size-small);
+}
+
 .project-hero {
   overflow: hidden;
   margin: 1rem 0 1.2rem;
@@ -242,6 +248,25 @@ main {
   font-size: var(--font-size-small);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.vibe-badge {
+  border: 1px solid var(--fg-muted-2);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: var(--font-size-small);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.vibe-badge--low {
+  background: rgb(255 255 255 / 0.03);
+  color: var(--fg-muted-4);
+}
+
+.vibe-badge--high {
+  background: rgb(from var(--accent-color) r g b / 0.14);
+  color: var(--accent-color);
 }
 
 .project-stats {
@@ -328,6 +353,16 @@ main {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.vibe-legend {
+  margin-top: 2rem;
+  color: var(--fg-muted-4);
+  font-size: var(--font-size-small);
+}
+
+.vibe-legend p {
+  margin: 0.2rem 0;
 }
 
 .project-hero--bike {
