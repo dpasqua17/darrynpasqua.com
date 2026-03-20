@@ -1,0 +1,221 @@
+:root {
+  --burnished-brass-light-accent: #b88e2f;
+  --burnished-brass-dark-accent: #c89b3c;
+  --burnished-brass-light-text: #2b2418;
+  --burnished-brass-light-muted: #5f5648;
+  --burnished-brass-light-border: #d7ccb8;
+  --burnished-brass-dark-text: #ece7dd;
+  --burnished-brass-dark-muted: #cfc6b4;
+  --burnished-brass-dark-border: #3a4048;
+}
+
+:root {
+  --bg-color: #f2eadb;
+  --bg-overlay: linear-gradient(rgb(255 248 238 / 0.84), rgb(255 248 238 / 0.84));
+  --fg-color: var(--burnished-brass-light-text);
+  --fg-contrast: rgb(255 251 245 / 0.96);
+  --fg-muted-1: rgb(61 45 20 / 0.045);
+  --fg-muted-2: rgb(95 86 72 / 0.16);
+  --fg-muted-3: rgb(95 86 72 / 0.26);
+  --fg-muted-4: var(--burnished-brass-light-muted);
+  --fg-muted-5: color-mix(in srgb, var(--burnished-brass-light-muted) 86%, black);
+  --glass-bg: rgb(245 237 224 / 0.78);
+  --accent-color-alpha: rgb(from var(--accent-color) r g b / 0.16);
+  --contrast-color: #1d160d;
+  --edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.42);
+  --shadow: 0 0 0 0.0625rem rgb(58 41 12 / 0.05),
+    0 0.06rem 0.22rem 0.04rem rgb(58 41 12 / 0.08),
+    0 0.22rem 0.65rem 0.08rem rgb(58 41 12 / 0.06);
+  --shadow-raised: 0 0 0 0.0625rem rgb(58 41 12 / 0.08),
+    0 0.2rem 0.55rem 0.08rem rgb(58 41 12 / 0.14),
+    0 0.45rem 1.15rem 0.14rem rgb(58 41 12 / 0.08);
+  --shadow-glass: 0 1rem 2rem -1.25rem rgb(76 55 20 / 0.28);
+  --shadow-glow: 0 0 0 0.0625rem rgb(from var(--accent-color) r g b / 0.2),
+    0 0.18rem 0.5rem 0.08rem rgb(from var(--accent-color) r g b / 0.18);
+}
+
+[data-theme="dark"] {
+  --bg-color: color-mix(in srgb, var(--accent-color) 7%, #140f09);
+  --bg-overlay: linear-gradient(rgb(14 11 8 / 0.88), rgb(14 11 8 / 0.9));
+  --fg-color: var(--burnished-brass-dark-text);
+  --fg-contrast: rgb(24 18 10 / 0.94);
+  --fg-muted-1: rgb(255 248 238 / 0.045);
+  --fg-muted-2: rgb(58 64 72 / 0.9);
+  --fg-muted-3: rgb(118 111 97 / 0.42);
+  --fg-muted-4: var(--burnished-brass-dark-muted);
+  --fg-muted-5: color-mix(in srgb, var(--burnished-brass-dark-muted) 88%, white);
+  --glass-bg: rgb(28 24 20 / 0.82);
+  --accent-color-alpha: rgb(from var(--accent-color) r g b / 0.16);
+  --contrast-color: #1c1409;
+  --edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.06);
+  --shadow: 0 0 0 0.0625rem rgb(0 0 0 / 0.18),
+    0 0.08rem 0.24rem 0.06rem rgb(0 0 0 / 0.24),
+    0 0.28rem 0.8rem 0.12rem rgb(0 0 0 / 0.16);
+  --shadow-raised: 0 0 0 0.0625rem rgb(0 0 0 / 0.22),
+    0 0.18rem 0.55rem 0.1rem rgb(0 0 0 / 0.28),
+    0 0.55rem 1.4rem 0.18rem rgb(0 0 0 / 0.18);
+  --shadow-glass: 0 1rem 2.4rem -1.1rem rgb(0 0 0 / 0.5);
+  --shadow-glow: 0 0 0 0.0625rem rgb(from var(--accent-color) r g b / 0.18),
+    0 0.15rem 0.55rem 0.1rem rgb(from var(--accent-color) r g b / 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-color: color-mix(in srgb, var(--accent-color) 7%, #140f09);
+    --bg-overlay: linear-gradient(rgb(14 11 8 / 0.88), rgb(14 11 8 / 0.9));
+    --fg-color: var(--burnished-brass-dark-text);
+    --fg-contrast: rgb(24 18 10 / 0.94);
+    --fg-muted-1: rgb(255 248 238 / 0.045);
+    --fg-muted-2: rgb(58 64 72 / 0.9);
+    --fg-muted-3: rgb(118 111 97 / 0.42);
+    --fg-muted-4: var(--burnished-brass-dark-muted);
+    --fg-muted-5: color-mix(in srgb, var(--burnished-brass-dark-muted) 88%, white);
+    --glass-bg: rgb(28 24 20 / 0.82);
+    --accent-color-alpha: rgb(from var(--accent-color) r g b / 0.16);
+    --contrast-color: #1c1409;
+    --edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.06);
+    --shadow: 0 0 0 0.0625rem rgb(0 0 0 / 0.18),
+      0 0.08rem 0.24rem 0.06rem rgb(0 0 0 / 0.24),
+      0 0.28rem 0.8rem 0.12rem rgb(0 0 0 / 0.16);
+    --shadow-raised: 0 0 0 0.0625rem rgb(0 0 0 / 0.22),
+      0 0.18rem 0.55rem 0.1rem rgb(0 0 0 / 0.28),
+      0 0.55rem 1.4rem 0.18rem rgb(0 0 0 / 0.18);
+    --shadow-glass: 0 1rem 2.4rem -1.1rem rgb(0 0 0 / 0.5);
+    --shadow-glow: 0 0 0 0.0625rem rgb(from var(--accent-color) r g b / 0.18),
+      0 0.15rem 0.55rem 0.1rem rgb(from var(--accent-color) r g b / 0.16);
+  }
+}
+
+body {
+  background:
+    radial-gradient(circle at top center, rgb(from var(--accent-color) r g b / 0.08), transparent 38rem),
+    linear-gradient(var(--bg-color), var(--bg-color));
+}
+
+#site-nav::before {
+  background:
+    linear-gradient(rgb(from var(--accent-color) r g b / 0.07), rgb(from var(--accent-color) r g b / 0.03)),
+    var(--glass-bg);
+}
+
+#site-nav nav a.active {
+  background-image: linear-gradient(
+    180deg,
+    rgb(from var(--accent-color) r g b / 0.24),
+    rgb(from var(--accent-color) r g b / 0.14)
+  );
+}
+
+@media only screen and (max-width: 700px) {
+  #site-nav {
+    position: sticky;
+    top: 0.35rem;
+    z-index: 1000;
+    margin: 0.35rem auto 0;
+    width: calc(100% - 0.7rem);
+    max-width: none;
+    inset-block-start: 0;
+    border-radius: 1.3rem;
+  }
+
+  #site-nav::before {
+    border-radius: 1.3rem;
+  }
+
+  #site-nav nav {
+    padding: 0.28rem 0.34rem;
+  }
+
+  #site-nav nav ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0.12rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #site-nav nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  #site-nav nav li {
+    flex: 0 0 auto;
+  }
+
+  #site-nav nav .divider {
+    margin: 0 0.1rem;
+  }
+
+  #site-nav nav a,
+  #site-nav nav summary,
+  #site-nav nav button {
+    white-space: nowrap;
+  }
+
+  #site-nav nav a,
+  #site-nav nav summary {
+    padding: 0.52rem 0.58rem;
+    font-size: 0.93rem;
+  }
+
+  #site-nav nav .circle {
+    padding: 0.52rem;
+  }
+
+  #site-nav nav #home a {
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+  }
+
+  #site-nav nav #home .icon {
+    margin-inline-end: 0.2rem;
+  }
+
+  #site-nav nav #theme-switcher ul,
+  #site-nav nav #feed ul,
+  #site-nav nav #language-switcher ul {
+    overflow: visible;
+  }
+
+  main {
+    margin-top: 3.3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #site-nav {
+    position: sticky;
+    top: 0.2rem;
+    margin-top: 0.2rem;
+    width: calc(100% - 0.4rem);
+  }
+
+  #site-nav nav {
+    padding: 0.24rem 0.28rem;
+  }
+
+  #site-nav nav ul {
+    gap: 0.08rem;
+  }
+
+  #site-nav nav a,
+  #site-nav nav summary {
+    padding: 0.48rem 0.5rem;
+    font-size: 0.89rem;
+  }
+
+  #site-nav nav .circle {
+    padding: 0.48rem;
+  }
+
+  #site-nav nav #home a {
+    font-size: 0.91rem;
+  }
+
+  main {
+    margin-top: 3.05rem;
+    width: calc(100% - 1rem);
+  }
+}

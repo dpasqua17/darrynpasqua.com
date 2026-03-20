@@ -13,10 +13,11 @@ highlight_theme = "css"
 
 [extra]
 default_theme = "dark"
-accent_color = "#ff7800"
-accent_color_dark = "#ffa348"
+accent_color = "#B88E2F"
+accent_color_dark = "#C89B3C"
 bundled_fonts = true
-styles = ["gallery.css"]
+styles = ["gallery.css", "burnished-brass.css"]
+scripts = ["burnished-brass-theme.js"]
 show_copy_button = true
 show_reading_time = true
 show_share_button = false
