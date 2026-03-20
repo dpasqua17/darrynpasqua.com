@@ -39,9 +39,3 @@ links = [
 show_copyright = true
 show_powered_by = true
 show_source = false
-links = [
-  { url = "@/projects.md", name = "Projects" },
-  { url = "mailto:dpasqua@bullpencoach.us", name = "Email" },
-  { url = "https://github.com/dpasqua17", name = "GitHub" },
-  { url = "https://linkedin.com/in/darrynpasqua", name = "LinkedIn" },
-]
