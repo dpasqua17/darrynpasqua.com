@@ -1,6 +1,6 @@
 (function () {
-  const DARK_TINT = "#C89B3C";
-  const LIGHT_TINT = "#B88E2F";
+  const DARK_TINT = "#BFA45A";
+  const LIGHT_TINT = "#A4863F";
 
   function upsertThemeMeta() {
     let meta = document.querySelector('meta[name="theme-color"]:not([media])');
