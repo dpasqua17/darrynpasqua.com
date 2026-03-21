@@ -26,7 +26,7 @@ My day job is at a manufacturing company, where I work across operations, sales,
 
 Weird problems with odd constraints aren't frustrating — they're an exciting set of conditions with a fun solution to build from a scrapyard of tools.
 
-Have a frustrating or fascinating idea? Send it to me.
+Have a frustrating problem or fascinating idea? Send it to me.
 
 <details>
   <summary>Education</summary>
