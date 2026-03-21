@@ -48,6 +48,35 @@
     var(--glass-bg);
 }
 
+#site-nav nav a.active,
+#site-footer nav a.active,
+#post-nav .post-nav-item:hover,
+.tags a:hover,
+.tags .tag,
+mark {
+  color: var(--fg-color);
+}
+
+#site-nav nav a.active,
+#site-footer nav a.active {
+  background-color: rgb(from var(--accent-color) r g b / 0.22);
+}
+
+#site-nav nav a.active:hover,
+#site-footer nav a.active:hover,
+#post-nav .post-nav-item:hover,
+.tags a:hover,
+.tags .tag:hover {
+  background-color: var(--accent-color);
+  color: var(--fg-contrast);
+}
+
+#site-nav nav a,
+#site-nav nav summary,
+#site-nav nav button {
+  text-shadow: none;
+}
+
 html,
 body {
   overflow-x: clip;
