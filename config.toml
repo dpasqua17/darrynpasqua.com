@@ -30,7 +30,7 @@ show_theme_switcher = true
 show_repo = false
 links = [
   { url = "@/projects.md", name = "Projects" },
-  { url = "mailto:dpasqua@bullpencoach.us", name = "Email" },
+  { url = "mailto:darryn@darrynpasqua.com", name = "Email" },
   { url = "https://github.com/dpasqua17", name = "GitHub" },
   { url = "https://linkedin.com/in/darrynpasqua", name = "LinkedIn" },
 ]

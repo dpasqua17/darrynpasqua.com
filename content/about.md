@@ -17,4 +17,4 @@ Working on something interesting or have a frustrating problem? Send me your ide
 
 **Contact**
 
-[dpasqua@bullpencoach.us](mailto:dpasqua@bullpencoach.us)
+[darryn@darrynpasqua.com](mailto:darryn@darrynpasqua.com)

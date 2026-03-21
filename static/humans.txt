@@ -1,7 +1,7 @@
 /* TEAM */
 Owner: Darryn Pasqua
 Site: https://darrynpasqua.com
-Contact: dpasqua@bullpencoach.us
+Contact: darryn@darrynpasqua.com
 
 /* TECHNOLOGY */
 Built with: Zola, Duckquill, GitHub Pages
