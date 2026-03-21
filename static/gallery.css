@@ -64,23 +64,27 @@ main {
   inset: 0;
   margin: 0;
   opacity: 0;
-  animation: travel-fade 30s infinite;
+  animation: travel-fade 45s infinite;
+}
+
+.travel-slide--1 {
+  animation-delay: -0.9s;
 }
 
 .travel-slide--2 {
-  animation-delay: 6s;
+  animation-delay: 8.1s;
 }
 
 .travel-slide--3 {
-  animation-delay: 12s;
+  animation-delay: 17.1s;
 }
 
 .travel-slide--4 {
-  animation-delay: 18s;
+  animation-delay: 26.1s;
 }
 
 .travel-slide--5 {
-  animation-delay: 24s;
+  animation-delay: 35.1s;
 }
 
 .travel-slide img {
@@ -112,16 +116,16 @@ main {
 
 @keyframes travel-fade {
   0%,
-  16% {
+  2% {
     opacity: 0;
   }
 
-  3%,
-  13% {
+  6%,
+  18% {
     opacity: 1;
   }
 
-  20%,
+  22%,
   100% {
     opacity: 0;
   }
