@@ -15,33 +15,24 @@ main {
 }
 
 .crt-home-quote {
-  margin-top: -0.15rem;
-  padding: 0 1rem 1rem;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(100% - 2rem, 48rem);
   text-align: center;
-}
-
-.crt-home-quote__text,
-.crt-home-quote__byline {
-  margin: 0;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .crt-home-quote__text {
-  max-width: 34rem;
-  margin-inline: auto;
+  margin: 0;
   color: var(--accent-color);
-  font-size: clamp(0.92rem, 1.45vw, 1.15rem);
-  line-height: 1.2;
+  font-size: clamp(0.82rem, 1.15vw, 1rem);
+  line-height: 1;
+  white-space: nowrap;
   text-shadow:
     hsl(from var(--accent-color) h s l / 0.4) 0 0 0.25rem,
     hsl(from var(--accent-color) h calc(s * 1.8) l / 0.45) 0 0 0.65rem;
-}
-
-.crt-home-quote__byline {
-  margin-top: 0.45rem;
-  color: color-mix(in srgb, var(--accent-color) 72%, white 28%);
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .colophon-page {
@@ -149,16 +140,11 @@ main {
   }
 
   .crt-home-quote {
-    padding: 0 0.85rem 0.9rem;
+    width: min(100% - 1.25rem, 48rem);
   }
 
   .crt-home-quote__text {
-    font-size: clamp(0.9rem, 3.7vw, 1.05rem);
-    text-wrap: balance;
-  }
-
-  .crt-home-quote__byline {
-    font-size: 0.74rem;
+    font-size: clamp(0.54rem, 1.9vw, 0.78rem);
   }
 }
 

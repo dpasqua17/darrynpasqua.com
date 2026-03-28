@@ -12,7 +12,6 @@ title = "Darryn Pasqua"
 
 <div class="crt-home-quote">
   <p class="crt-home-quote__text"><em>“The most potent muse of all is our own inner child.”</em></p>
-  <p class="crt-home-quote__byline">Stephen Nachmanovitch</p>
 </div>
 {% end %}
 
