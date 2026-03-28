@@ -24,7 +24,7 @@ My day job is at a manufacturing company, where I work across operations, sales,
 
 > My night job is being my own test subject.
 
-Weird problems with odd constraints aren't frustrating — they're an exciting set of conditions with a fun solution to build from a scrapyard of tools.
+Bizarre problems aren't frustrating; they're exciting puzzles waiting to be solved with whatever tools you have on hand.
 
 Have a frustrating problem or fascinating idea? [Send it to me.](mailto:darryn@darrynpasqua.com)
 
