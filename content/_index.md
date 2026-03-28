@@ -2,11 +2,6 @@
 title = "Darryn Pasqua"
 +++
 
-<div class="home-quote">
-  <p class="home-quote__text">“The most potent muse of all is our own inner child.”</p>
-  <p class="home-quote__byline">Stephen Nachmanovitch</p>
-</div>
-
 {% crt() %}
 ```text
      .          *                .                *           .       
@@ -14,6 +9,11 @@ title = "Darryn Pasqua"
                     .                 .                .        *     
  .      *        .        .               .         *          .      
 ```
+
+<div class="crt-home-quote">
+  <p class="crt-home-quote__text"><em>“The most potent muse of all is our own inner child.”</em></p>
+  <p class="crt-home-quote__byline">Stephen Nachmanovitch</p>
+</div>
 {% end %}
 
 I build fixes for people stuck doing things the hard way — operations teams, plant managers, finance analysts. Sometimes that person is me. Process, hardware, or software — the problem picks and I figure out the rest with whatever's lying around.
