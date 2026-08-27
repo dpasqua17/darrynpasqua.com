@@ -46,3 +46,11 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  audit:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Ora agent-readiness audit (regression floor)
+        run: npx -y @ora-ai/ax@0.5 audit https://darrynpasqua.com --min-score 30
