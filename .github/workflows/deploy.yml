@@ -28,6 +28,9 @@ jobs:
           BUILD_ONLY: true
           BUILD_FLAGS: --force
 
+      - name: Generate markdown twins and llms-full.txt
+        run: python3 scripts/generate_md_twins.py content/ public/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

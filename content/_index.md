@@ -1,5 +1,6 @@
 +++
 title = "Darryn Pasqua"
+description = "I build fixes for people stuck doing things the hard way."
 +++
 
 {% crt() %}

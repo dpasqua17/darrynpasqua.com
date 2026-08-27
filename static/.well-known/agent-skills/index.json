@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "provider": {
+    "name": "Darryn Pasqua",
+    "url": "https://darrynpasqua.com"
+  },
+  "skills": [
+    {
+      "id": "urn:air:darrynpasqua.com:skill:site-index",
+      "name": "Read the site index",
+      "description": "Get a plain-text overview of darrynpasqua.com: who Darryn Pasqua is, what each page covers, and links to markdown versions of every page.",
+      "mediaType": "text/plain",
+      "url": "https://darrynpasqua.com/llms.txt"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:skill:read-background",
+      "name": "Look up Darryn Pasqua's background",
+      "description": "Canonical source for Darryn Pasqua's professional background, education, and expertise in manufacturing, software, and AI.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/about.md"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:skill:browse-projects",
+      "name": "Browse projects",
+      "description": "Side projects with notes on how much of each build was delegated to AI agents.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/projects.md"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:skill:contact",
+      "name": "Contact Darryn Pasqua",
+      "description": "How to reach Darryn Pasqua about manufacturing, automation, or software problems — email, GitHub, LinkedIn.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/contact.md"
+    }
+  ]
+}

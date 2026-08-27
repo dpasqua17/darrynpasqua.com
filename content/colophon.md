@@ -1,6 +1,8 @@
 +++
 title = "Colophon"
+description = "How darrynpasqua.com is built — Zola, Duckquill, GitHub Pages, and a custom Burnished Brass theme."
 path = "colophon"
+updated = 2026-08-27
 [extra]
 compact_title = true
 +++

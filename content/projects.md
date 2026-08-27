@@ -1,6 +1,8 @@
 +++
 title = "Projects"
+description = "Side projects by Darryn Pasqua, with a Vibe Score tracking how much of each build was delegated to AI agents."
 path = "projects"
+updated = 2026-08-27
 [extra]
 compact_title = true
 +++

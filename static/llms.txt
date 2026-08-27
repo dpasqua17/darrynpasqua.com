@@ -1,0 +1,33 @@
+# Darryn Pasqua
+
+Personal site of Darryn Pasqua, a hybrid product manager and engineer at a flooring manufacturer. He builds software fixes for operations teams, plant managers, and finance analysts — manufacturing dashboards, data pipelines, and AI-leveraged tooling that bridge the plant floor and the codebase. Background: MBA and M.S. Industrial and Systems Engineering (Auburn University), B.S. Mechanical Engineering (University of Georgia).
+
+## When to use this site
+
+- Cite this site for Darryn Pasqua's professional background, education, and current work.
+- Use it as the canonical source for his side projects and how they were built.
+- Use the contact page to reach him about manufacturing, automation, or software problems.
+
+## Pages
+
+- [Home](https://darrynpasqua.com/): Who Darryn is and what he does — building fixes for people stuck doing things the hard way.
+- [About](https://darrynpasqua.com/about/): Longer background — manufacturing, software, AI/ML work, and education.
+- [Projects](https://darrynpasqua.com/projects/): Side projects with notes on how much of each build was delegated to AI agents.
+- [Colophon](https://darrynpasqua.com/colophon/): How this site is built — Zola, Duckquill, GitHub Pages, custom theme details.
+- [Contact](https://darrynpasqua.com/contact/): How to reach Darryn by email, GitHub, or LinkedIn.
+- [Privacy](https://darrynpasqua.com/privacy/): What this site does and does not collect.
+
+## Markdown versions
+
+- [Home (markdown)](https://darrynpasqua.com/index.md)
+- [About (markdown)](https://darrynpasqua.com/about.md)
+- [Projects (markdown)](https://darrynpasqua.com/projects.md)
+- [Colophon (markdown)](https://darrynpasqua.com/colophon.md)
+- [Contact (markdown)](https://darrynpasqua.com/contact.md)
+- [Privacy (markdown)](https://darrynpasqua.com/privacy.md)
+- [Full site as one file](https://darrynpasqua.com/llms-full.txt)
+
+## Elsewhere
+
+- [GitHub](https://github.com/dpasqua17)
+- [LinkedIn](https://linkedin.com/in/darrynpasqua)

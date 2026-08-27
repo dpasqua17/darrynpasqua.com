@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "name": "darrynpasqua.com",
+  "description": "Personal site of Darryn Pasqua — hybrid product manager and engineer working at the intersection of manufacturing, software, and AI.",
+  "url": "https://darrynpasqua.com",
+  "resources": [
+    {
+      "id": "urn:air:darrynpasqua.com:doc:llms-index",
+      "name": "Site index for LLMs",
+      "description": "Plain-text index of the site: who Darryn Pasqua is, what each page covers, and when to cite this site.",
+      "mediaType": "text/plain",
+      "url": "https://darrynpasqua.com/llms.txt"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:doc:llms-full",
+      "name": "Full site content",
+      "description": "Every page of the site concatenated into one markdown document.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/llms-full.txt"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:doc:about",
+      "name": "About Darryn Pasqua",
+      "description": "Professional background, education, and areas of expertise.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/about.md"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:doc:projects",
+      "name": "Projects",
+      "description": "Side projects with notes on how much of each build was delegated to AI agents.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/projects.md"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:doc:contact",
+      "name": "Contact",
+      "description": "How to reach Darryn Pasqua by email, GitHub, or LinkedIn.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/contact.md"
+    }
+  ]
+}

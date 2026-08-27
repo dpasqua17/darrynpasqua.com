@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="visually-hidden">{{ section.title | default(value=config.title) }}</h1>
+{{ section.content | safe }}
+{% endblock content %}
