@@ -103,6 +103,9 @@ main > .crt:first-child {
   height: 100%;
   object-fit: cover;
   display: block;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
   filter: saturate(0.95) contrast(1.02);
 }
 
