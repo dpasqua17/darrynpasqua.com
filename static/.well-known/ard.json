@@ -3,7 +3,19 @@
   "name": "darrynpasqua.com",
   "description": "Personal site of Darryn Pasqua — hybrid product manager and engineer working at the intersection of manufacturing, software, and AI.",
   "url": "https://darrynpasqua.com",
-  "resources": [
+  "trustManifest": {
+    "identity": {
+      "name": "Darryn Pasqua",
+      "domain": "darrynpasqua.com",
+      "url": "https://darrynpasqua.com",
+      "contact": "mailto:darryn@darrynpasqua.com",
+      "sameAs": [
+        "https://github.com/dpasqua17",
+        "https://linkedin.com/in/darrynpasqua"
+      ]
+    }
+  },
+  "entries": [
     {
       "id": "urn:air:darrynpasqua.com:doc:llms-index",
       "name": "Site index for LLMs",
@@ -38,6 +50,13 @@
       "description": "How to reach Darryn Pasqua by email, GitHub, or LinkedIn.",
       "mediaType": "text/markdown",
       "url": "https://darrynpasqua.com/contact.md"
+    },
+    {
+      "id": "urn:air:darrynpasqua.com:skill:site-skill",
+      "name": "Site skill",
+      "description": "SKILL.md telling agents how to read and cite this site.",
+      "mediaType": "text/markdown",
+      "url": "https://darrynpasqua.com/skills/darrynpasqua-site/SKILL.md"
     }
   ]
 }

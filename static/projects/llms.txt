@@ -1,0 +1,18 @@
+# Darryn Pasqua — Projects
+
+Scoped index for the projects section of darrynpasqua.com. Side projects by Darryn Pasqua, each tagged with a "Vibe Score" — how much of the build was delegated to AI agents (0% = wrote it all by hand, 100% = drove and tested while an agent did the typing).
+
+## Content
+
+- [Projects page](https://darrynpasqua.com/projects/): All projects with descriptions, stack, and results.
+- [Projects (markdown)](https://darrynpasqua.com/projects.md): Same content as plain markdown.
+
+## Current projects
+
+- Pitch Classifier: neural network workflow classifying MLB pitch types from 2024 Statcast data, separate models for left- and right-handed pitchers (Python, TensorFlow/Keras). 0% vibes.
+- Bike Tracker: real-time indoor cycling analytics desktop app — Python, connects to a Bluetooth FTMS exercise bike and turns live ride data into a training dashboard. ~100% vibes (drove idea, testing, iteration while an agent did the typing).
+
+## Related
+
+- [Site index](https://darrynpasqua.com/llms.txt)
+- [About Darryn](https://darrynpasqua.com/about.md)

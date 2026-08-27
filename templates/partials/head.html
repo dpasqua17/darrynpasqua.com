@@ -176,7 +176,14 @@
 		"@context": "https://schema.org",
 		"@graph": [
 			{
+				{%- if current_path == "/about/" %}
+				"@type": ["AboutPage", "ProfilePage"],
+				"mainEntity": { "@id": "{{ config.base_url | safe }}/#person" },
+				{%- elif current_path == "/contact/" %}
+				"@type": "ContactPage",
+				{%- else %}
 				"@type": "WebPage",
+				{%- endif %}
 				"@id": "{{ current_url | safe }}",
 				"url": "{{ current_url | safe }}",
 				"name": "{% include 'partials/title.html' %}",

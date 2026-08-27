@@ -1,8 +1,10 @@
-"""Generate markdown twins of each page plus llms-full.txt into the build output.
+"""Generate markdown twins, llms-full.txt, and the agent-skills index into the build output.
 
 Run after `zola build`: python3 scripts/generate_md_twins.py content/ public/
 """
 
+import hashlib
+import json
 import re
 import sys
 from pathlib import Path
@@ -71,6 +73,35 @@ def main(content_dir: Path, out_dir: Path) -> None:
         print(f"wrote {slug}.md")
     (out_dir / "llms-full.txt").write_text("\n\n---\n\n".join(twins), encoding="utf-8")
     print("wrote llms-full.txt")
+    write_skills_index(out_dir)
+
+
+def write_skills_index(out_dir: Path) -> None:
+    """Write /.well-known/agent-skills/index.json (v0.2.0) with a fresh SKILL.md digest."""
+    skill_rel = "skills/darrynpasqua-site/SKILL.md"
+    digest = hashlib.sha256((out_dir / skill_rel).read_bytes()).hexdigest()
+    index = {
+        "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+        "version": "0.2.0",
+        "provider": {"name": "Darryn Pasqua", "url": BASE_URL},
+        "skills": [
+            {
+                "id": "urn:air:darrynpasqua.com:skill:site",
+                "name": "darrynpasqua-site",
+                "description": (
+                    "Read, cite, and contact Darryn Pasqua via darrynpasqua.com — "
+                    "background, projects, and contact info, all available as markdown."
+                ),
+                "type": "skill-md",
+                "url": f"{BASE_URL}/{skill_rel}",
+                "digest": f"sha256:{digest}",
+            }
+        ],
+    }
+    dest = out_dir / ".well-known/agent-skills/index.json"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
+    print("wrote .well-known/agent-skills/index.json")
 
 
 if __name__ == "__main__":

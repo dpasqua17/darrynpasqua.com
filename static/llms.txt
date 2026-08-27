@@ -27,6 +27,13 @@ Personal site of Darryn Pasqua, a hybrid product manager and engineer at a floor
 - [Privacy (markdown)](https://darrynpasqua.com/privacy.md)
 - [Full site as one file](https://darrynpasqua.com/llms-full.txt)
 
+## For agents
+
+- [Agent skill](https://darrynpasqua.com/skills/darrynpasqua-site/SKILL.md): SKILL.md describing how to read, cite, and contact via this site.
+- [Skills index](https://darrynpasqua.com/.well-known/agent-skills/index.json)
+- [Resource catalog](https://darrynpasqua.com/.well-known/ard.json)
+- [Site source repo](https://github.com/dpasqua17/darrynpasqua.com): includes AGENTS.md with instructions for coding agents.
+
 ## Elsewhere
 
 - [GitHub](https://github.com/dpasqua17)
